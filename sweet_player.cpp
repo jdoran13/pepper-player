@@ -437,8 +437,9 @@ void SweetPepperInstance::initFFmpeg ()
     // Register all formats and codecs
     av_register_all();
 
+    const char *videoFilePath = "/Users/james/Synergy/sandbox/media/frag/100.frag";
     //const char *videoFilePath = "/Users/james/Synergy/sandbox/media/basketball/150831121.mp4";
-    const char *videoFilePath = "/Users/james/Desktop/Untitled.mov";
+    //const char *videoFilePath = "/Users/james/Desktop/Untitled.mov";
 
     // TEST CUSTOM AVIO
     mIfstream.open(videoFilePath, std::ios::binary);
