@@ -28,8 +28,8 @@ function createWindow () {
   
     // Create the browser window.
     mainWindow = new BrowserWindow({
-        'width': 1000,
-        'height': 540*3,
+        'width': 320*2,
+        'height': 240*2,
         'webPreferences': {
             'plugins': true // Allow our Video Player Plugin.
         }
@@ -37,13 +37,13 @@ function createWindow () {
 
     // Load index.html.
     mainWindow.loadURL(url.format({
-            pathname: path.join(__dirname, 'html/index.html'),
+            pathname: path.join(__dirname, 'html/index.0.html'),
             protocol: 'file:',
             slashes: true
     }));
 
     // Open Chromium Developer Tools.
-    // mainWindow.webContents.openDevTools();
+    mainWindow.webContents.openDevTools();
 
     // Window closed function.
     mainWindow.on('closed', function () {
