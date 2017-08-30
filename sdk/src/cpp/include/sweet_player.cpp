@@ -438,9 +438,9 @@ void SweetPepperInstance::initFFmpeg ()
     av_register_all();
 
     //const char *videoFilePath = "/Users/jamesdoran/Development/synergy/media/frag/26ccb43b-2da0-4ffd-70c7-3bd5adcbd408-asset/26ccb43b-2da0-4ffd-70c7-3bd5adcbd408.1-Video1.2298.frag";
-    //const char *videoFilePath = "/Users/james/Synergy/sandbox/media/basketball/150831121.mp4";
+    const char *videoFilePath = "/Users/james/Synergy/sandbox/media/basketball/150831121.mp4";
     //const char *videoFilePath = "/Users/james/Desktop/Untitled.mov";
-    const char *videoFilePath = "/Users/jamesdoran/Desktop/zero-dollar-cart.mov";
+    //const char *videoFilePath = "/Users/jamesdoran/Desktop/zero-dollar-cart.mov";
 
     // TEST CUSTOM AVIO
     mIfstream.open(videoFilePath, std::ios::binary);
@@ -632,11 +632,11 @@ void SweetPepperInstance::paintYuv (int32_t result)
 {
     // FFmpeg
 
-    std::cout << "beforeSeek " << std::endl;
+    // std::cout << "beforeSeek " << std::endl;
 
-    int seekResponse = av_seek_frame(mpFormatCtx, mVideoStream, 24400, 0);
+    // int seekResponse = av_seek_frame(mpFormatCtx, mVideoStream, 24400, 0);
 
-    std::cout << "seekResponse " << seekResponse << std::endl;
+    // std::cout << "seekResponse " << seekResponse << std::endl;
 
     bool finished = av_read_frame(mpFormatCtx, &mPacket) < 0;
 

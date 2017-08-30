@@ -1,2 +1,2 @@
-.DS_Store
-Quantum-darwin-x64
+# Build
+apps/electron/out/*

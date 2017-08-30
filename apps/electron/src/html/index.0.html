@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quantum</title>
+        <meta charset="UTF-8">
+        <!-- Css -->
+        <link rel="stylesheet" type="text/css" href="../css/index.css">
+
+        <!-- Js -->
+        <!-- <script type="text/javascript" src="../js/video/sync.js"></script> -->
+
+    </head>
+
+    <body>
+        <div class="quantum-videos">
+            <div class="quantum-video-row">
+                <div class="quantum-video">
+                    <video id="video-channel-2" oncanplay="readyVidInterlace();">
+                        <source src="../video/152110610.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <!-- <div class="quantum-video">
+                    <video id="video-channel-2" oncanplay="readyVidInterlace();">
+                        <source src="/Users/jamesdoran/Development/personal/synergy/media/mp4/sfn-at-chn-08-09-2016.mp4" type="video/mp4">
+                    </video>
+                </div> -->
+            </div>
+            <div class="quantum-video-row">
+                <div class="quantum-video">
+                    <video controls id="video-channel-1" oncanplay="readyVidInterlace();">
+                        <source src="../video/152110610.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="quantum-video">
+                    <video id="video-channel-3" oncanplay="readyVidInterlace();">
+                        <source src="../video/152110610.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div class="quantum-video-controls">
+            <div id="play-pause" style="margin: auto;">Play</div> 
+            <span id="current_R_Time"/>
+	        <span id="current_G_Time"/>
+	        <span id="current_B_Time"/>
+	        <span id="current_G_Deviation"/>
+	        <span id="current_B_Deviation"/>
+	        <span id="current_R_Frame"/>
+	        <span id="current_G_Frame"/>
+            <span id="current_B_Frame"/>
+            <span class="totalTime"/>
+	        <span class="totalFrames"/>
+        </div>
+
+        <script type="text/javascript" src="../js/video/sync.js"></script>
+    </body>
+</html>
